@@ -1,0 +1,111 @@
+
+.head-container {
+ display: flex;
+ flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+padding: 20px 20px 0px 20px;
+background-image: linear-gradient(white, white, white, #e5e5e5);
+
+}
+
+.fa {
+
+  padding: 8px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center; 
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+
+}
+
+.carousel-caption {
+	background-color: rgba(23, 162, 184, 0.6);
+    border-radius: 30px;
+  
+
+}
+
+}
+.btn {
+	width: 221px;
+}
+
+hr {
+	background-color: #17a2b8;
+}
+.nav-link {
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.1rem
+ 
+
+}
+nav {
+	 border-bottom-style: solid;
+    border-bottom-color: #17a2b8;
+    border-bottom-width: 2px;
+}
+
+.dropdown-menu {
+  background-color: #e5e5e5;
+}
+
+@media only screen and (max-width: 550px) {
+    .head-container{
+        font-size: 0.8em;
+        
+    }
+    .contactdeets {
+    	text-align: center;
+    }
+
+     .carousel-caption
+
+    {
+    	transform: scale(0.5);
+        
+    }
+   
+  
+
+}
+
+.carousel-item img {
+	opacity: 0.6;
+	
+}
+
+
+html, body {
+	overflow-x: unset;
+
+}
+
+li {
+	list-style-type: none;
+}
+
+body {
+    margin: auto 0;
+    font-family: sans-serif;
+}
