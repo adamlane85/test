@@ -1,4 +1,5 @@
 
+
 .head-container {
  display: flex;
  flex-wrap: wrap;
@@ -9,7 +10,29 @@ padding: 20px 20px 0px 20px;
 
 
 }
+img {
+    max-width:100%;
+    height:auto;
+}
+h1 {
+  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.65);
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 700;
+}
 
+h2 {
+  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.45);
+  font-size: 16px;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+h3 {
+  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.65);
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+}
 .fa {
 
   padding: 8px;
@@ -24,23 +47,7 @@ padding: 20px 20px 0px 20px;
   opacity: 0.7;
 }
 
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
 
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
-.fa-instagram {
-  background: #125688;
-  color: white;
-
-}
-.contactdeets {
-	  display: flex;
-	flex-direction: column;
 
 }
 
@@ -58,61 +65,67 @@ padding: 20px 20px 0px 20px;
   background-color: #059fdf;
 }
 
-.button2 {
-  font-size: 14px;
-  
+
+
+
+
+
+.note {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+  opacity: 0.4;
+  font-size: 12px;
+  margin: 8px 0;
 }
 
-.button:hover {
-    opacity: 0.7;
+.shadow {
+  -moz-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.07);
+  -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.07);
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.07);
+}
+
+.opacity-90 {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+  opacity: 0.9;
+}
+
+.opacity-80 {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+}
+.opacity-30 {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+  opacity: 0.3;
+}
+
+.divider {
+  width: 50px;
+  height: 3px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: black;
 
 }
 
-.carousel-caption {
-	background-color: rgba(5, 159, 223, 0.6);
-    border-radius: 30px;
-}
-
-}
-.btn {
-	width: 221px;
-}
-
-/* make dropdown button activate on hover */
-.navbar-default .navbar-nav > li.dropdown:hover > a, 
-.navbar-default .navbar-nav > li.dropdown:hover > a:hover,
-.navbar-default .navbar-nav > li.dropdown:hover > a:focus {
-    background-color: rgb(231, 231, 231);
-    color: rgb(85, 85, 85);
-}
-li.dropdown:hover > .dropdown-menu {
-    display: block;
-    justify-content: center;
-}
-
-.dropdown-menu {
-   left: 50%;
-   transform: translateX(-50%);
-}
 
 hr {
 	background-color: #059fdf;
+  width: 20%;
+
 }
-.nav-link {
-  font-family: 'Open Sans', sans-serif;
+
+h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-transform: uppercase;
-  font-size: 1.1rem
- 
-
-}
-nav {
-	 border-bottom-style: solid;
-    border-bottom-color: #059fdf;
-    border-bottom-width: 2px;
 }
 
-.dropdown-menu {
-  background-color: white;
+h3:after, h3:before {
+  content: '';
+  width: 150px;
+  height: 2px;
+  background: #059fdf;
+  margin: 0 10px;
 }
 
 @media only screen and (max-width: 550px) {
@@ -125,6 +138,7 @@ nav {
     }
     .logo {
     	order: 1;
+
     }
 
      .carousel-caption {
@@ -135,8 +149,17 @@ nav {
     	max-height: 100px;
     	margin: 5px;
     	padding: 5px;
+    
     }
-   
+    h1 {
+      font-size: 1em;
+    }
+    h2 {
+      font-size: 1em;
+    }
+h3 {
+  font-size: 10;
+}
 
 }
 @media only screen and (max-width: 991px) {
@@ -151,11 +174,15 @@ nav {
 	
 }
 
+.content {
+  padding-left: 100px;
+  padding-right: 100px;
 
+}
 .body-container {
 
 	justify-items: center;
-    background-color: white;
+    background: rgba(0, 0, 0, 0);
     display: flex;
  flex-wrap: wrap;
  flex-direction: row;
@@ -165,14 +192,20 @@ nav {
 align-content: space-between;
 }
 .boxes {
-	height: 300px;
-	width: 300px;
+	height: 200px;
+	width: 200px;
 	padding: 30px;
 	margin: 30px;
+  border-radius: 10px;
+  background-color: #059FDF;
+  opacity: 0.8;
 }
 
 .box1 {
+background-image: url("dentist.png");
+background-size: 100%;
 background-color: #059fdf;
+
 }
 .box2 {
 background-color: #059fdf;
@@ -197,6 +230,7 @@ background-color: #059fdf;
 html, body {
 	overflow-x: unset;
 min-width: 100%;
+
 }
 
 li {
@@ -204,21 +238,25 @@ li {
 }
 
 body {
+background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     margin: auto 0;
     font-family: sans-serif;
+    text-align: center;
+
+
 }
     .google-maps {
-        position: relative;
-        padding-bottom: 75%; // This is the aspect ratio
-        height: 0;
-        overflow: hidden;
+       
+       overflow: hidden;
     }
+
     .google-maps iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100% !important;
-        height: 100% !important;
+      text-align: center;
+          width: 75% !important;
+      
     }
 
 .footer {
@@ -226,6 +264,5 @@ body {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #059fdf;
-  color: white;
-  text-align: center;
+    text-align: center;
+  opacity:0.5;
